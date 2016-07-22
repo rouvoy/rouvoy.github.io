@@ -27,11 +27,10 @@
     <header class="three columns">
         <center>
             <img src="{{ site.baseurl }}static/img/profile.png" class="me">
-            <br/><small>© Inria / Photo C. Morel</small>
+            <br/><span><small>© Inria / Photo C. Morel</small></span>
         </center>   
         <h1>{{ site.name }}</h1>
         <p>
-            <a href="{{ site.tel_full }}">{{ site.tel }}</a>
         </p>
         <address>
             <a href="{{ site.google_maps }}">
@@ -42,10 +41,11 @@
             </a>
         </address>
         <p>
-            <a href="{{ site.email_full }}">{{ site.email }}</a><br/>
-            <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> </a> /
-            <a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i> </a> /
-            <a href="https://fr.linkedin.com/in/rouvoy"><i class="fa fa-linkedin"></i> </a> / 
+            <a href="{{ site.tel_full }}"><i class="fa fa-phone" aria-hidden="true"></i> {{ site.tel }}</a><br/>
+            <a href="{{ site.email_full }}"><i class="fa fa-envelope-o" aria-hidden="true"></i> {{ site.email }}</a><br/>
+            <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i></a> /
+            <a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a> /
+            <a href="https://fr.linkedin.com/in/rouvoy"><i class="fa fa-linkedin"></i></a> / 
             <a href="callto://romainrouvoy"><i class="fa fa-skype"></i></a>
         </p>
     </header>
